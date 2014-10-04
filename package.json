@@ -1,0 +1,17 @@
+{
+  "name": "bad-cipher",
+  "private": true,
+  "version": "1.0.0",
+  "description": "A really bad encryption cipher meant for obscurity NOT security",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Devin Weaver <suki@tritarget.org> (http://tritarget.org/)",
+  "license": "WYWTPL",
+  "dependencies": {
+    "bitwise-xor": "0.0.0",
+    "gulp-util": "^3.0.1",
+    "through2": "^0.6.2"
+  }
+}
