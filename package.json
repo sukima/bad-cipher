@@ -9,6 +9,10 @@
   },
   "author": "Devin Weaver <suki@tritarget.org> (http://tritarget.org/)",
   "license": "WYWTPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sukima/bad-cipher.git"
+  },
   "dependencies": {
     "bitwise-xor": "0.0.0",
     "gulp-util": "^3.0.1",

@@ -1,7 +1,7 @@
 # Really Bad Cipher
 
 Just as the name suggests, this is a **really bad** cipher. It is XOR'ing to a
-random key. the *key* is then interlaced into the output.
+random key. The *key* is then interlaced into the output.
 
 Yes you read that correctly the key is **embedded** in the output!
 
@@ -24,12 +24,7 @@ Here is the algorithm I used to encrypt; and in reverse to decrypt:
 7. Base64 encode
 8. Wrap the base64 string in a JSON object
 
-## Why?!
-
-Because at 3:00 AM on a Saturday there was no-one there to stop me.
-
-If you are interested in preventing me from doing things like this again
-[contact me][2] and give me a fun puzzle to work on instead.
+[1]: http://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_.28random.29
 
 ## Gulp
 
@@ -50,5 +45,38 @@ gulp.task('encrypt', function() {
 });
 ```
 
-[1]: http://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_.28random.29
+## Why?!
+
+Because at 3:00 AM on a Saturday there was no-one there to stop me.
+
+If you are interested in preventing me from doing things like this again
+[contact me][2] and give me a fun puzzle to work on instead.
+
 [2]: http://tritarget.org/devin/#contact
+
+## License
+
+```
+             DO WHAT YOU WANT TO PUBLIC LICENSE
+                  Version 3, December 2012
+
+ Copyright (C) 2012 Devin Weaver <suki@tritarget.org>
+
+ Everyone is permitted to copy and distribute verbatim or modified
+ copies of this license document, and changing it is allowed as long
+ as the name and author are changed.
+
+             DO WHAT YOU WANT TO PUBLIC LICENSE
+ TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION
+
+  0. You just DO WHAT YOU WANT TO.
+
+  1. Attribution is OPTIONAL, however, APPRECIATED.
+
+ TERMS AND CONDITIONS FOR FITNESS FOR PURPOSE
+
+  0. USAGE of any material, in whole or in part, comes WITHOUT WARRANTY.
+
+  1. To the extent permitted by applicable law, This license offers no
+     claim of FITNESS FOR PURPOSE.
+```
