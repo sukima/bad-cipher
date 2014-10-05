@@ -26,6 +26,29 @@ Here is the algorithm I used to encrypt; and in reverse to decrypt:
 
 [1]: http://en.wikipedia.org/wiki/Universally_unique_identifier#Version_4_.28random.29
 
+## Usage
+
+```javascript
+BadCipher.encrypt('foobar'); // => [base64 from random password]
+
+BadCipher.encrypt('foobar', '12345');          // => DC5vCavEYg0Qchh594Xe/A==
+BadCipher.decrypt('DC5vCavEYg0Qchh594Xe/A=='); // => 'foobar'
+
+// BadCipher is a monad:
+var result = new BadCipher('foobar', '12345');
+   .xor()
+   .interleave()
+   .bind(function(data, key) {
+      // data and key are buffers
+      return {
+         data:    data.toString('base64'),
+         keySize: key.length
+      };
+   });
+
+result.data; // => {data: 'DC5vCavEYg0Qchh594Xe/A==', keySize: 5}
+```
+
 ## Gulp
 
 There is an included gulp plugin (`gulp-encrypt`) which will take in a file and
