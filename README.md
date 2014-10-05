@@ -5,7 +5,7 @@ random key. The *key* is then interlaced into the output.
 
 Yes you read that correctly the key is **embedded** in the output!
 
-So it goes without saying: do not use this for any security!
+So it goes without saying: **do not use this for any security!**
 
 ## Crypto
 
