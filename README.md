@@ -1,4 +1,4 @@
-# Really Bad Cipher
+# Really Bad Cipher [![Build Status](https://travis-ci.org/sukima/bad-cipher.svg)](https://travis-ci.org/sukima/bad-cipher)
 
 Just as the name suggests, this is a **really bad** cipher. It is XOR'ing to a
 random key. The *key* is then interlaced into the output.
